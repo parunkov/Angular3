@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppTableComponent } from './components/app-table/app-table.component';
+import {MatTableModule} from '@angular/material/table'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTableComponent
+    AppTableComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

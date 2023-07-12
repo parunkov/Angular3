@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 
 import { AppComponent } from './app.component';
 import { AppTableComponent } from './components/app-table/app-table.component';
-import {MatTableModule} from '@angular/material/table'
+import {MatTableModule} from '@angular/material/table';
+import { AppInputComponent } from './components/app-input/app-input.component'
 
 @NgModule({
   declarations: [
@@ -11,8 +12,9 @@ import {MatTableModule} from '@angular/material/table'
     AppTableComponent,
   ],
   imports: [
-    BrowserModule,
-    MatTableModule
+    BrowserAnimationsModule,
+    AppInputComponent,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

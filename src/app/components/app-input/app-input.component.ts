@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FilterService } from 'src/app/services/filter.service';
 
 
 @Component({
@@ -13,4 +14,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class AppInputComponent {
   value = '';
+  onInput(event: Event) {
+    this.filterService.changeFilter(this.value);
+  }
+  constructor(
+    private filterService: FilterService
+  ) { }
 }

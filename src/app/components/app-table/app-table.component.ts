@@ -17,7 +17,6 @@ export class AppTableComponent {
   ) {
     this.data = ELEMENT_DATA;
     this.subscription = this.filterSevice.filter$.subscribe((value) => {
-      console.log(value);
       this.data = ELEMENT_DATA.filter((item) => item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()));
     })
   }
@@ -25,5 +24,8 @@ export class AppTableComponent {
   }
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+  onClick(event: Event) {
+    console.log((event.target as Element).id);    
   }
 }

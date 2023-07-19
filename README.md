@@ -65,8 +65,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   #### Результат залить на свой Guthub. Ссылку прислать на [форму обратной связи](https://forms.yandex.ru/u/5ce7aa786b6a50012c7424f4/).
 
 
-# Angular3
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
 ## Development server

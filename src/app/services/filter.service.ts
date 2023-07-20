@@ -5,7 +5,6 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class FilterService {
-
   public filter$ = new Subject<string>();
   public changeFilter(value: string) {
     this.filter$.next(value);
